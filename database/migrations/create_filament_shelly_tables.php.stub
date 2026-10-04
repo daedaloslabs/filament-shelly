@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('shelly_accounts', function (Blueprint $table) {
+            $table->id();
+            $table->string('server_uri')->nullable();
+            $table->text('auth_key')->nullable();
+            $table->timestamps();
+        });
+
+        Schema::create('shelly_sensors', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('shelly_account_id')->constrained('shelly_accounts')->cascadeOnDelete();
+            $table->string('name');
+            $table->string('device_id');
+            $table->string('type');
+            $table->json('options')->nullable();
+            $table->json('placements')->nullable();
+            $table->unsignedInteger('sort')->default(0);
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('shelly_sensors');
+        Schema::dropIfExists('shelly_accounts');
+    }
+};
