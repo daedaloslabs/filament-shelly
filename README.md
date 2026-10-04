@@ -7,7 +7,7 @@ Show live [Shelly](https://www.shelly.com) sensor values as stat widgets on **an
 
 Add as many sensors as you want from a settings page, choose each sensor's type, then decide **per stat** on which pages it appears. You don't have to write a widget or touch your pages.
 
-![Filament Shelly](art/cover.jpg)
+![Filament Shelly](https://raw.githubusercontent.com/daedaloslabs/filament-shelly/main/art/cover.jpg)
 
 ## Features
 
@@ -73,9 +73,9 @@ If your panel uses a [custom theme](https://filamentphp.com/docs/5.x/styling/ove
 
 The stats appear at the top of the chosen pages and refresh on their own.
 
-![Settings page](art/settings.jpg)
+![Settings page](https://raw.githubusercontent.com/daedaloslabs/filament-shelly/main/art/settings.jpg)
 
-![Dashboard with Shelly stats](art/dashboard.jpg)
+![Dashboard with Shelly stats](https://raw.githubusercontent.com/daedaloslabs/filament-shelly/main/art/dashboard.jpg)
 
 ### Custom sensors
 
