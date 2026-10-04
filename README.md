@@ -7,6 +7,8 @@ Show live [Shelly](https://www.shelly.com) sensor values as stat widgets on **an
 
 Add as many sensors as you want from a settings page, choose each sensor's type, then decide **per stat** on which pages it appears. You don't have to write a widget or touch your pages.
 
+![Filament Shelly](art/cover.jpg)
+
 ## Features
 
 - **Settings page** with a repeater: add, reorder, clone and test any number of Shelly devices.
@@ -70,6 +72,10 @@ If your panel uses a [custom theme](https://filamentphp.com/docs/5.x/styling/ove
 5. Click **Test** to confirm that the device answers, then **Save**.
 
 The stats appear at the top of the chosen pages and refresh on their own.
+
+![Settings page](art/settings.jpg)
+
+![Dashboard with Shelly stats](art/dashboard.jpg)
 
 ### Custom sensors
 
